@@ -1,14 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <title></title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rust WASM Pong</title>
   </head>
 
   <body>
+    <h1>Rust Pong</h1>
     <script type="module">
-      import init from "./pkg/rust_pong.js"; // notese que es el nombre de nuestro proyecto
+      import init from "./pkg/rust_pong.js";
       init("./pkg/rust_pong_bg.wasm").then(function (wasm) {
         wasm.run();
       });
